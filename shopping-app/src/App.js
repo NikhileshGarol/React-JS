@@ -1,18 +1,17 @@
 import logo from './logo.svg';
 import HomePage from './pages/HomePage';
-import { Container } from '@mui/material';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { ThemeProvider } from "@mui/material/styles";
+import theme from './utils/theme';
 
 function App() {
   return (
-    <>
-      {/* Wrap the entire app in the providers for global state */}
+    <ThemeProvider theme={theme}>
       <Header />
-         {/* Main content of the app, e.g., product list */}
-        <HomePage />
+      <HomePage />
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

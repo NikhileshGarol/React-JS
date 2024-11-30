@@ -3,6 +3,7 @@ import axios from 'axios';
  const api = axios.create({
   baseURL: 'https://api.sheety.co/af35b536915ec576818d468cf2a6505c/reactjsTest',
   headers: {
+    'Content-Type': 'application/json',
     Authorization: 'Bearer Ex9yLyRU7wvyxfblpq5HAhfQqUP1vIyo',
   },
 });
